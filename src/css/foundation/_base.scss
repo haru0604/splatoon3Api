@@ -1,0 +1,72 @@
+@use "global"as *;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  font-family: "Noto Sans JP",
+  sans-serif;
+  // font-size: 0;
+  // line-height: 1;
+  // letter-spacing: 0.02em;
+  color: #333;
+  word-wrap: break-word;
+  /* フォントレンダリング設定: 1x解像度ではsubpixel、2x以上の解像度ではgrayscale */
+
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: unset;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+input, button, select, textarea {
+  outline: none;
+  background: transparent;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  color: currentColor;
+  text-align: left;
+
+  appearance: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  display: none;
+}
+
+input[type="submit"], input[type="button"], label, button, select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+img, video {
+  width: 100%;
+}
+
+svg {
+  overflow: visible;
+}
