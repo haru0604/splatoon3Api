@@ -15,7 +15,7 @@ async function load() {
   const coop = document.querySelector('#js-api-coop');
   let stage = null;
   let weapons = null;
-  let weapon = null;
+  let weapon = "";
 
   for (let i = 0; i < result.regular.length; i++) {
     const regularResult = result.regular;
@@ -73,6 +73,8 @@ async function load() {
       weapons = coopResult.weapons[j];
 
       weapon += `<li class="stage__weapon"><img src="${weapons.image}" alt=""></li>`
+
+      console.log(weapon);
     }
 
     coop.innerHTML +=
@@ -89,3 +91,8 @@ async function load() {
 
 
 load();
+
+
+//TODO Reactでルールごとに書き換える
+//TODO Reactでブラウザに抽出する
+//TODO リロードボタンを押すとSPAで更新できる
