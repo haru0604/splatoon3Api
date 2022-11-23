@@ -1,5 +1,9 @@
+.container {
+  background-color: #f5f5f5;
+}
+
 .container__inner {
-  max-width: 1200px;
+  max-width: (300px * 3) + (16px * (3 - 1));
   margin: 0 auto;
 }
 

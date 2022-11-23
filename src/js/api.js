@@ -1,9 +1,3 @@
-// APIを叩いてjsonデータを取得
-// fetch("https://spla3.yuu26.com/api/schedule")
-//   .then(res => res.json())
-//   .then(console.log)
-//   .catch(console.error);
-
 const apiUrl = "https://spla3.yuu26.com/api/schedule";
 const coopUrl = "	https://spla3.yuu26.com/api/coop-grouping-regular/now";
 
